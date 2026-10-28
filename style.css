@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+:root { color-scheme: light; font-family: system-ui, -apple-system, Segoe UI, sans-serif; }
+body { margin: 0; background: #f3f5f1; color: #1c302a; }
+.wrap { width: min(760px, 100% - 32px); margin: 36px auto; padding: 28px; background: #fff; border: 1px solid #dce4dd; border-radius: 20px; }
+.eyebrow { font-size: .78rem; letter-spacing: .12em; font-weight: 700; color: #3e7562; }
+h1 { margin: 4px 0 8px; font-size: clamp(2rem, 6vw, 3rem); }
+.intro { color: #52645c; line-height: 1.6; margin-bottom: 28px; }
+label { display: block; font-weight: 650; margin: 20px 0 8px; }
+textarea, select { width: 100%; padding: 13px; border: 1px solid #cbd7ce; border-radius: 10px; font: inherit; background: #fcfdfb; color: #1c302a; }
+textarea { min-height: 170px; resize: vertical; }
+#output { min-height: 190px; }
+button { margin-top: 14px; border: 0; border-radius: 10px; padding: 13px 18px; font: inherit; font-weight: 700; background: #245d4b; color: white; cursor: pointer; }
+button:hover { filter: brightness(1.08); }
+button:focus-visible, textarea:focus-visible, select:focus-visible { outline: 3px solid #94cbb2; outline-offset: 2px; }
+.secondary { background: #e5eee7; color: #1c302a; }
+.note, #message { font-size: .9rem; color: #52645c; line-height: 1.5; }
+@media (max-width: 520px) { .wrap { margin: 12px auto; padding: 20px; } }

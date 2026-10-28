@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Study Buddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <p class="eyebrow">STUDY SMARTER</p>
+      <h1>AI Study Buddy</h1>
+      <p class="intro">Turn your notes into a useful prompt for summaries, flashcards, or practice questions.</p>
+    </header>
+
+    <label for="notes">Your study notes</label>
+    <textarea id="notes" placeholder="Paste your notes here..."></textarea>
+
+    <label for="task">What do you want to make?</label>
+    <select id="task">
+      <option value="summary">A clear summary</option>
+      <option value="flashcards">Flashcards with questions and answers</option>
+      <option value="quiz">A practice quiz with an answer key</option>
+      <option value="explain">A beginner-friendly explanation</option>
+    </select>
+
+    <button id="generate">Generate prompt</button>
+    <p id="message" role="status" aria-live="polite"></p>
+
+    <label for="output">Your prompt</label>
+    <textarea id="output" placeholder="Your prompt will appear here..." readonly></textarea>
+    <button id="copy" class="secondary">Copy prompt</button>
+    <p class="note">Your notes stay in this browser page. This tool does not send them to a server.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
